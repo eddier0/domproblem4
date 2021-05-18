@@ -6,20 +6,23 @@
 
   <title>dom-problem 4</title>
   <meta name="description" content="js problem sets">
-  <meta name="author" content="SitePoint">
+  <meta name="author" content="dom problem 4">
 
 </head>
 <body>
   <form>
-    <label for="d1">Dropdown List:</label>
-    <select id="d1">
-      <option value="1">Honda</option>
-      <option value="2">Jaguar</option>
-      <option value="3">Lamborghini</option>
+    Select your favorite fruit:
+    <select id="mySelect">
+      <option value="apple">Apple</option>
+      <option value="orange">Orange</option>
+      <option value="pineapple">Pineapple</option>
     </select>
-    
-    <button type="button" onclick="countOptions()" value="Count Dropdown Options"> Click Me!</button>
-    </form>
+  </form>
+  
+  <p>Click the button to see which fruit you selected:</p>
+  
+  <button type="button" onclick="myFruit()">Click Here</button>
+  <p id="fruit"></p>
 
   <script src="scripts.js"></script>
 </body>
